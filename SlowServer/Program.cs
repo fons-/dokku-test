@@ -48,7 +48,7 @@ namespace SlowServer
 			using(var host = new Nancy.Hosting.Self.NancyHost(config, CurrentAddress))
 			{
 				host.Start();
-				Console.WriteLine("Running. Press any key to stop.");
+				Console.WriteLine("Running on {0}. Press any key to stop.", CurrentAddress);
 				Console.ReadKey();
 			}
 		}
